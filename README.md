@@ -87,3 +87,4 @@ Does not track your start time or save your preferences, so timer stops if your 
 
 ## Author
 👋 I'm a frontend web developer + Tech & Communications Specialist. #opentowork Older work: @Cotni and @incsuccess# POMODORO_K
+# POMODORO_K
