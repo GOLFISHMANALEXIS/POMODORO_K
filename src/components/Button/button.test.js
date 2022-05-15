@@ -8,7 +8,7 @@ it('renders a close button to close settings', () => {
 })
 
 it('renders an apply button for settings', () => {
-  render(<Controls type="apply" buttonText="Apply" />)
+  render(<Controls type="apply" buttonText="Aplicar" />)
   const applyButton = screen.getByText(/apply/i)
   expect(applyButton).toBeInTheDocument();
 });

@@ -62,22 +62,22 @@ const Settings = ({ visible,
       <div className="preferences preferences--visible">
       <div className="preferences__pane">
         <Button type="close" buttonText="×" toggleVisibility={toggleSettingsVisibility} />
-        <h2>Settings</h2>
+        <h2>Configuración</h2>
         <form onSubmit={applySettings}>
           <div className="pane__time-settings">
-            <h3>Time (Minutes)</h3>
+            <h3>Tiempo (Minutos)</h3>
             <div action="" className="time-settings__form">
-              <label htmlFor="pomodoro">pomodoro</label>
+              <label htmlFor="pomodoro">Pomodoro</label>
               <input type="number" name="pomodoro" id="pomodoro" min="5" max="90" defaultValue={pomoLength} />
-              <label htmlFor="short-break">short break</label>
+              <label htmlFor="short-break">Descanso Breve</label>
               <input type="number" name="shortBreak" id="short-break" min="1" max="14" defaultValue={shortLength} />
-              <label htmlFor="long-break">long break</label>
+              <label htmlFor="long-break">Descanso largo</label>
               <input type="number" name="longBreak" id="long-break" min="15" max="30" defaultValue={longLength} />
             </div>
           </div>
 
           <div className="pane__font-preference">
-            <h3>Font</h3>
+            <h3>Fuente</h3>
             <input type="radio" id="fontPref1" name="font" value="kumbh" defaultChecked={fontPref === 'kumbh'} />
             <label htmlFor="fontPref1" className="font-preference__kumbh">Aa</label>
             <input type="radio" id="fontPref2" name="font" value="roboto" defaultChecked={fontPref === 'roboto'} />
@@ -97,7 +97,7 @@ const Settings = ({ visible,
             <input type="radio" id="colorPref3" name="color" value="purple" defaultChecked={accentColor === 'purple'} />
             <label htmlFor="colorPref3" className="color-preference__purple"></label>
           </div>
-          <Button type="apply" buttonText="Apply" />
+          <Button type="apply" buttonText="Aplicar" />
         </form>
       </div>
     </div>

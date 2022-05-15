@@ -42,16 +42,16 @@ const TimerDisplay = ({ timerMode,
       play()
     }
     setIsActive(!isActive)
-    setButtonText( buttonText === 'START'
-                    || buttonText === 'RESUME'
-                      ? 'PAUSE'
-                      : 'RESUME'
+    setButtonText( buttonText === 'COMIENZO'
+                    || buttonText === 'RESUMEN'
+                      ? 'PAUSA'
+                      : 'RESUMEN'
                   )
   }
 
   let timesUpMsg = timerMode === 'pomo'
-                  ? 'time for a break'
-                  : 'back to work!'
+                  ? 'Tiempo de un descanso'
+                  : '¡volver al trabajo!'
 
   let timeText = timeLeft === '0:00'
                   ? timesUpMsg

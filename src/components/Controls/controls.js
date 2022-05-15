@@ -39,7 +39,7 @@ const Controls = ({ timerMode,
               checked={timerMode === 'pomo'}
               onClick={playSfx} 
               onChange={handleModeChange} />
-      <label  htmlFor="pomo" className="controls__button">pomodoro</label>
+      <label  htmlFor="pomo" className="controls__button">Pomodoro</label>
 
       <input  type="radio" 
               id="short" 
@@ -47,7 +47,7 @@ const Controls = ({ timerMode,
               checked={timerMode === 'short'}
               onClick={playSfx} 
               onChange={handleModeChange} />
-      <label htmlFor="short"  className="controls__button">short break</label>
+      <label htmlFor="short"  className="controls__button">Descanso corto</label>
       
       <input  type="radio" 
               id="long" 
@@ -55,7 +55,7 @@ const Controls = ({ timerMode,
               checked={timerMode === 'long'}
               onClick={playSfx} 
               onChange={handleModeChange} />
-      <label htmlFor="long"  className="controls__button">long break</label>
+      <label htmlFor="long"  className="controls__button">Descanso largo</label>
     </form>
   )
 }
